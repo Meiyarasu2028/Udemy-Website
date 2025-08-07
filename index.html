@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Gabarito:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <div class="navbar">
+
+        <div class="navbar__s1">
+            <h1>Udemy</h1>
+        </div>
+
+        <div class="navbar__s2">
+            <i class="fa-solid fa-magnifying-glass" style="color: #010813;"></i>
+            <input type="search" placeholder="search for anything here.Tech business,Art...">
+        </div>
+
+        <div class="navbar__s3">
+            <p>Courses</p>
+            <!-- <p>My Learning</p> -->
+            <div class="mylearning">
+                <p>My Learning</p>
+
+                <div class="mylearning__popup">
+                    <p>You did not purchase anything Yet <i class="fa-solid fa-face-frown fa-bounce"></i></p>
+                </div>
+            </div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+
+        </div>
+
+        <!-- side__Navbar -->
+
+        <div class="side__Navbar" onclick="shownavbar()">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+
+    </div>
+
+    <!-- overlay -->
+    <div class="overlay">
+        <p class="xmark" onclick="closenavbar()"><i class="fa-solid fa-xmark"></i></p>
+        <p><i class="fa-solid fa-user-graduate"></i>Courses</p>
+        <p><i class="fa-solid fa-book-open"></i> My Learning</p>
+        <p><i class="fa-solid fa-cart-shopping"></i> Add to Cort</p>
+        <p><i class="fa-solid fa-bell"></i> Notification</p>
+        <p><i class="fa-solid fa-user"></i> Contact</p>
+    </div>
+
+    <!-- Course Topics -->
+
+    <div class="Course__topic">
+        <p>Development</p>
+        <p>Business</p>
+        <p>iT & Software</p>
+        <p>Personal Development</p>
+        <p>Design</p>
+        <p>Marketing</p>
+    </div>
+
+    <div class="Course__topic2">
+        <p>Development</p>
+        <p>Business</p>
+        <p>Design</p>
+        <p>Marketing</p>
+    </div>
+
+    <!-- header Image -->
+
+    <div class="header__image">
+        <div class="header__image__m1">
+            <img src="./images/udemy ima.jpg" alt="header image">
+        </div>
+
+        <div class="offer__box">
+
+            <div class="offer__box__xmark">
+            <div onclick="offerboxclose()"><p><i class="fa-solid fa-xmark"></i></p></div>
+            </div>
+            
+            <h2>Udemy Flash Sale! 24 hours to save.</h2>
+            <p>Get the top Courses for just 1999. Just one day to save but a lifetime to learn</p>
+        </div>
+    </div>
+
+
+
+    <!-- Recommended -->
+
+    <div class="Recommended__title">
+        <h2>Recommended for you</h2>
+        <p>pick the best fit</p>
+
+        <div class="Recommended__title__container">
+
+            <div class="Recommended__title__card">
+                <img src="./images/c1 (1).jpg" alt="Recommended img">
+                <p>2023 React Js </p>
+                <p>col steele</p>
+                <p>4.8 ⭐⭐⭐⭐</p>
+                <p>1099 <del>4999</del></p>
+            </div>
+
+            <div class="Recommended__title__card">
+                <img src="./images/c1 (2).jpg" alt="Recommended img">
+                <p>2023 Java Script </p>
+                <p>col steele</p>
+                <p>3.9 ⭐⭐⭐</p>
+                <p>2999 <del>7999</del></p>
+            </div>
+
+            <div class="Recommended__title__card">
+                <img src="./images/c1 (3).jpg" alt="Recommended img">
+                <p>2023 python </p>
+                <p>col steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>4499 <del>9999</del></p>
+            </div>
+
+            <div class="Recommended__title__card">
+                <img src="./images/c1 (4).jpg" alt="Recommended img">
+                <p>2023 Mongo DB </p>
+                <p>col steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>3499 <del>6999</del></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- recommended Topics -->
+
+    <div class="Recommended__topic">
+        <h2>Topics Recommended for you</h2>
+
+        <div class="Recommended__topic__list">
+            <p>Website</p>
+            <p>JavaScript</p>
+            <p>Css</p>
+            <p>Mongo DB</p>
+            <p>Azure</p>
+            <P>AWS</P>
+            <p>Docker</p>
+            <p>python</p>
+            <p>React Js</p>
+        </div>
+    </div>
+
+    <!-- Most Popular -->
+
+    <div class="most__papular">
+        <h1>Most Popular</h1>
+        <p>pick the best fit</p>
+
+        <div class="most__papular__container">
+
+            <div class="most__papular__card">
+                <img src="./images/d (1).jpg" alt=" most__papular">
+                <p>2023 Mongo DB </p>
+                <p>col steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>3499 <del>6999</del></p>
+            </div>
+
+            <div class="most__papular__card">
+                <img src="./images/d (2).jpg" alt="most__papular">
+                <p>2023 Python </p>
+                <p>col steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>3499 <del>6999</del></p>
+            </div>
+
+            <div class="most__papular__card">
+                <img src="./images/d (3).jpg" alt="most__papular">
+                <p>2023 SQL </p>
+                <p>col steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>3499 <del>6999</del></p>
+            </div>
+
+            <div class="most__papular__card">
+                <img src="./images/d (4).jpg" alt="most__papular">
+                <p>2023 React js </p>jpg
+                <p>col steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>3499 <del>6999</del></p>
+            </div>
+
+            <div class="most__papular__card">
+                <img src="./images/d (5).jpg" alt="most__papular">
+                <p>2023 Java Script </p>
+                <p>col steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>3499 <del>6999</del></p>
+            </div>
+
+            <div class="most__papular__card">
+                <img src="./images/d (6).jpg" alt="most__papular">
+                <p>2023 AWS </p>
+                <p>col steele</p>
+                <p>3.9 ⭐⭐⭐</p>
+                <p>3499 <del>6999</del></p>
+            </div>
+
+            <div class="most__papular__card">
+                <img src="./images/d (7).jpg" alt="most__papular">
+                <p>2023 Java </p>
+                <p>col steele</p>
+                <p>3.9 ⭐⭐⭐</p>
+                <p>3499 <del>6999</del></p>
+            </div>
+
+            <div class="most__papular__card">
+                <img src="./images/d (8).jpg" alt="most__papular">
+                <p>2023 Docker </p>
+                <p>col steele</p>
+                <p>4.9 ⭐⭐⭐⭐</p>
+                <p>3499 <del>6999</del></p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="footer__one">
+            <div class="footer__one__s1">
+                <p>Udemy business</p>
+                <p>Teach on Udemy</p>
+                <p>Get the App</p>
+                <p>About Us</p>
+                <p>Contact Us</p>
+            </div>
+
+            <div class="footer__one__s2">
+                <p>Careers</p>
+                <p>Blog</p>
+                <p>Help and Support</p>
+                <p>Affiliate</p>
+                <p>investors</p>
+            </div>
+        </div>
+        <div class="footer__two">
+            <div class="footer__two__s1">
+                <h2>Udemy</h2>
+            </div>
+
+            <div class="footer__two__s2">
+
+                <p> &copy; udemy</p>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+
+</html>
